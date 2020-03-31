@@ -118,6 +118,7 @@ def multiplication(n1,n2):
 		acc=right_shift(s)[:n]
 		multiplier=right_shift(s)[n:n*2]
 		q0=right_shift(s)[n*2]
+		# print(str(acc)+" "+str(multiplier))
 	if(acc[0]=='0'):
 		dec=int(acc+multiplier,2)
 	else:
