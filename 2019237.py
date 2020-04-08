@@ -88,7 +88,7 @@ This function multiples two integers n1 and n2 using booth's algorithm for multi
 and returns answer in its integer and binary form.
 '''
 def multiplication(n1,n2):
-	n=16
+	n=8
 	acc='0'*n
 	q0='0'
 	m1=n1
@@ -118,7 +118,6 @@ def multiplication(n1,n2):
 		acc=right_shift(s)[:n]
 		multiplier=right_shift(s)[n:n*2]
 		q0=right_shift(s)[n*2]
-		# print(str(acc)+" "+str(multiplier))
 	if(acc[0]=='0'):
 		dec=int(acc+multiplier,2)
 	else:
